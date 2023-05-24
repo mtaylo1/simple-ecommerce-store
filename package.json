@@ -1,10 +1,9 @@
 {
   "name": "simple-ecommerce-store",
   "version": "0.1.0",
-  "description": "An e-commerce application made on the MERN Stack",
+  "description": "ecommerce store",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "server": "nodemon server.js",
     "client": "npm start --prefix client",
@@ -12,29 +11,30 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mtaylo1/simple-ecommerce-store.git"
+    "url": "https://github.com/mtaylo1"
   },
   "keywords": [
-    "ecommerce",
-    "store",
-    "e-commerce"
+    "ecommerce"
   ],
   "author": "mtaylo1",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/mtaylo1/simple-ecommerce-store/issues",
   "dependencies": {
-        "bcrypt": "^5.0.0",
-        "concurrently": "^5.3.0",
-        "config": "^3.3.3",
-        "express": "^4.17.1",
-        "jsonwebtoken": "^8.5.1",
-        "mongoose": "^5.11.11",
-        "validator": "^13.5.2"
+    "bcrypt": "^5.0.0",
+    "concurrently": "^5.3.0",
+    "config": "^3.3.3",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.11",
+    "validator": "^13.5.2",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
   },
-  "homepage": "https://github.com/mtaylo1/simple-ecommerce-store#readme",
   "devDependencies": {
     "nodemon": "^2.0.7"
   }
-}
 }

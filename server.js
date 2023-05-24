@@ -15,8 +15,11 @@ if(process.env.NODE_ENV === 'production') {
 }
 
 // connecting to mongoDB and then running server on port 4001
-const dbURI = config.get('dbURI');
+const dbURI = process.env.dbURI;
 const port = process.env.PORT || 4001;
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex:true })
   .then((result) => app.listen(port))
   .catch((err) => console.log(err));
+
+   console.log(`Server is listening on port ${port}`);
+  
